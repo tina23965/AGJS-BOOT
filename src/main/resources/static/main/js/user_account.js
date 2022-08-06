@@ -561,13 +561,11 @@ $(document).ready(function () {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-        // userAccount: account,
-        // userPassword: pwd,
-      }),
+      body: JSON.stringify({}),
     }).then((res) => {
       alert("成功登出！");
-      window.location.reload("user_login.html");
+      location.replace('user_login.html');
+//      window.location.reload("user_login.html");
     });
   });
 });
